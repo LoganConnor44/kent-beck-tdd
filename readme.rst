@@ -12,6 +12,7 @@ This repo does stop, currently, at Chapter 10. This is not the ending goal, but 
 PHPUnit
 ###################
 Use this command to run the tests:
+
 ```
 vendor/bin/phpunit
 ```
@@ -20,6 +21,7 @@ vendor/bin/phpunit
 PHPDocumentor
 ###################
 Use this command to generate documents:
+
 ```
 vendor/bin/phpdoc
 ```
