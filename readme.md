@@ -1,6 +1,5 @@
-Kent Beck's Test Driven Development By Example
+Kent Beck's Test Driven Development By Example Written In PHP 
 ==
-## Written In PHP
 
 This repo is simply a learning project. I have read through the book once and conceptually completed the exercises along with Beck. This is my second read through and I decided to make a repo and follow along in php.
 
