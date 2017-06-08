@@ -13,18 +13,18 @@ PHPUnit
 ###################
 Use this command to run the tests:
 
-```
+``
 vendor/bin/phpunit
-```
+``
 
 ###################
 PHPDocumentor
 ###################
 Use this command to generate documents:
 
-```
+``
 vendor/bin/phpdoc
-```
+``
 
 If you do not have GraphViz install on your machine see this link to help you set this up:
 * https://stackoverflow.com/questions/32439533/phpdocumentor-graphviz-dot-command-not-found
