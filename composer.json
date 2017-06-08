@@ -18,6 +18,13 @@
 	},
 	"require-dev": {
 		"mikey179/vfsStream": "1.1.*",
-		"phpunit/phpunit": "4.* || 5.*"
-	}
+		"phpunit/phpunit": "4.* || 5.*",
+		"phpdocumentor/phpdocumentor": "^2.9.0"
+	},
+	"autoload": {
+	    "psr-4": {
+	      "KentBeckTDD\\Currency\\" : "application/libraries/KentBeckTDD/Currency/",
+	      "KentBeckTDD\\Tests\\" : "application/libraries/Tests/"
+	    }
+  }
 }

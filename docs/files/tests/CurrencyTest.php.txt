@@ -1,0 +1,43 @@
+<?php namespace KentBeckTDD\Test;
+
+use KentBeckTDD\Currency\Money;
+use KentBeckTDD\Currency\Dollar;
+use KentBeckTDD\Currency\Peso;
+use PHPUnit\Framework\TestCase;
+
+class DollarTest extends TestCase {
+
+	public function testMultiplication() {
+		$Five = Money::dollar(5);
+		$expectedValue = 10;
+		$this->assertEquals(Money::dollar($expectedValue), $Five->times(2));
+		$expectedValue = 15;
+		$this->assertEquals(Money::dollar($expectedValue), $Five->times(3));
+	}
+
+	public function testEquality() {
+		$FiveA = Money::dollar(5);
+		$FiveB = Money::dollar(5);
+		$this->assertTrue($FiveA->equals($FiveB));
+		$Six = Money::dollar(6);
+		$this->assertFalse($FiveA->equals($Six));
+	}
+
+	public function testPesoMultiplication() {
+		$Five = Money::peso(5);
+		$expectedValue = 10;
+		$this->assertEquals(Money::peso($expectedValue), $Five->times(2));
+		$expectedValue = 15;
+		$this->assertEquals(Money::peso($expectedValue), $Five->times(3));
+	}
+
+	public function testCurrency() {
+		$Dollar = Money::dollar(5);
+		$Peso = Money::peso(5);
+
+		$expectedValue = 'USD';
+		$this->assertEquals($expectedValue, $Dollar->currency());
+		$expectedValue = 'MXN';
+		$this->assertEquals($expectedValue, $Peso->currency());
+	}
+}
